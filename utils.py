@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def load_forcing_as_df(file_path: str) -> pd.DataFrame:
-    """Impors forcing time series as pandas df.
+    """Imports forcing time series as pandas df.
     """
     data = xr.open_dataset(file_path)
     df = data.to_dataframe()
